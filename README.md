@@ -4,13 +4,13 @@
 
 Shared eslint config for my projects.
 
-# Install
+## Install
 
 ```
 yarn add @alxshelepenok/eslint-config --dev
 ```
 
-# Example
+## Example
 
 ```json
 {

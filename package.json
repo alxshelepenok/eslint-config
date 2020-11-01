@@ -28,6 +28,7 @@
     "eslint": "^7.7.0"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
   }
 }

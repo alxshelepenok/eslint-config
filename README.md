@@ -9,7 +9,7 @@ Shared eslint config for my projects.
 # Install
 
 ```
-npm install -D @alxshelepenok/eslint-config
+yarn add @alxshelepenok/eslint-config --dev
 ```
 
 # Example

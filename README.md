@@ -16,7 +16,7 @@ npm install -D @alxshelepenok/eslint-config
 
 ```json
 {
-	"extends": "@alxshelepenok/eslint-config"
+  "extends": "@alxshelepenok/eslint-config"
 }
 ```
 

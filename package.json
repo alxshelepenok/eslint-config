@@ -1,0 +1,30 @@
+{
+    "name": "@alxshelepenok/eslint-config",
+	"description": "My shareable eslint config",
+	"version": "0.1.0",
+	"main": "index.js",
+    "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+        "lint": "eslint --cache --ext .js .",
+        "test": "tape *.test.js"
+    },
+    "engines": {
+        "node": ">= 12 || ^10.12"
+	},
+	"repository": {
+        "type": "git",
+        "url": "git://github.com/alxshelepenok/eslint-config.git"
+    },
+    "keywords": [
+        "eslint",
+        "eslint-config"
+	],
+	"devDependencies": {
+        "eslint": "^7.7.0",
+        "tape": "^5.0.1"
+    },
+    "peerDependencies": {
+        "eslint": "^7.7.0"
+    }
+}

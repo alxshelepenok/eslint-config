@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - uses: alxshelepenok/rebase@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v1
+      - uses: alxshelepenok/rebase@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

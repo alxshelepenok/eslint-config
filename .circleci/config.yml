@@ -36,7 +36,7 @@ jobs:
           keys:
             - dependencies-{{ checksum "yarn.lock" }}
       - run: yarn test
-    
+
 workflows:
   version: 2
   test:

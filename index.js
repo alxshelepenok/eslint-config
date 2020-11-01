@@ -1,4 +1,4 @@
-import { join } from "path";
-import { readFileSync } from "fs";
+const path = require("path");
+const fs = require("fs");
 
-export default JSON.parse(readFileSync(join(__dirname, ".eslintrc.json")));
+module.exports = JSON.parse(fs.readFileSync(path.join(__dirname, ".eslintrc.json")));

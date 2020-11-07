@@ -544,11 +544,14 @@
         "allowMultiplePropertiesPerLine": true
       }
     ],
-    "object-shorthand": [2, "never"],
+    "object-shorthand": [2, "always", {
+      ignoreConstructors: false,
+      avoidQuotes: true
+    }],
     "one-var": [0],
     "one-var-declaration-per-line": [2, "initializations"],
     "operator-assignment": [0, "always"],
-    "operator-linebreak": ["error", "before", { "overrides": { "=": "none" } }],
+    "operator-linebreak": [2, "before", { "overrides": { "=": "none" } }],
     "padded-blocks": [0],
     "padding-line-between-statements": [0],
     "prefer-arrow-callback": [

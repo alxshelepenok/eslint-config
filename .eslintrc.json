@@ -545,8 +545,8 @@
       }
     ],
     "object-shorthand": [2, "always", {
-      ignoreConstructors: false,
-      avoidQuotes: true
+      "ignoreConstructors": false,
+      "avoidQuotes": true
     }],
     "one-var": [0],
     "one-var-declaration-per-line": [2, "initializations"],

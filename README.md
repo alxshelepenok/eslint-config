@@ -1,4 +1,4 @@
-# @alxshelepenok/eslint-config 
+# eslint-config 
 
 [![circleci][1]][2]
 

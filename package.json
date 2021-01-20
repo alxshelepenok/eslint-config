@@ -21,7 +21,7 @@
     "eslint-config"
   ],
   "devDependencies": {
-    "eslint": "7.17.0",
+    "eslint": "7.18.0",
     "tape": "5.1.1"
   },
   "peerDependencies": {

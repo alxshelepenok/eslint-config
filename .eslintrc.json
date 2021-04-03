@@ -71,8 +71,6 @@
     "default-case": [2, { "commentPattern": "(?:)" }],
     "default-case-last": [2],
     "default-param-last": [2],
-    "dot-location": [2, "property"],
-    "dot-notation": [2, { "allowKeywords": false, "allowPattern": "throws" }],
     "eol-last": [2, "always"],
     "eqeqeq": [2],
     "for-direction": [2],

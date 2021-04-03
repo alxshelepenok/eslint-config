@@ -1,6 +1,5 @@
 {
   "root": true,
-
   "globals": {
     "BigInt": false,
     "Symbol": false,
@@ -8,7 +7,6 @@
     "Set": false,
     "Reflect": false
   },
-
   "env": {
     "es6": false,
     "browser": false,
@@ -17,14 +15,11 @@
     "mocha": false,
     "jasmine": false
   },
-
   "reportUnusedDisableDirectives": true,
-
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module"
   },
-
   "rules": {
     "accessor-pairs": [
       2,
@@ -648,7 +643,6 @@
     "yield-star-spacing": [2, { "before": false, "after": true }],
     "yoda": [2, "never", { "exceptRange": true, "onlyEquality": false }]
   },
-
   "overrides": [
     {
       "files": "**/*.test.js",

@@ -1,7 +1,7 @@
 {
   "name": "@alxshelepenok/eslint-config",
   "description": "My shareable eslint config",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "main": "index.js",
   "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
   "license": "MIT",

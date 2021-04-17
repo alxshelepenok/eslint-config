@@ -91,7 +91,13 @@
         "considerPropertyDescriptor": true
       }
     ],
-    "func-style": [2, "expression"],
+    "func-style": [
+      2,
+      "declaration",
+      {
+        "allowArrowFunctions": true
+      }
+    ],
     "function-paren-newline": [2, "multiline"],
     "generator-star-spacing": [
       2,
@@ -521,12 +527,12 @@
         "ObjectExpression": {
           "multiline": true,
           "consistent": true,
-          "minProperties": 3
+          "minProperties": 5
         },
         "ObjectPattern": {
           "multiline": true,
           "consistent": true,
-          "minProperties": 3
+          "minProperties": 5
         }
       }
     ],
@@ -640,19 +646,5 @@
     "wrap-regex": [2],
     "yield-star-spacing": [2, { "before": false, "after": true }],
     "yoda": [2, "never", { "exceptRange": true, "onlyEquality": false }]
-  },
-  "overrides": [
-    {
-      "files": "**/*.test.js",
-      "extends": "./tests"
-    },
-    {
-      "files": "bin/**",
-      "rules": {
-        "no-console": [0],
-        "no-process-env": [0],
-        "no-process-exit": [2]
-      }
-    }
-  ]
+  }
 }

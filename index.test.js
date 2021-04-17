@@ -14,11 +14,11 @@ test("Load config to validate all rule syntax is correct", (t) => {
   const CLIEngine = eslint.CLIEngine;
 
   const cli = new CLIEngine({
-    useEslintrc: false,
     configFile: ".eslintrc.json",
+    useEslintrc: false,
   });
 
-  const code = "var foo = 1;\nvar bar = function () {};\nbar(foo);\n";
+  const code = "var foo = 1;\nvar bar = () => {};\nbar(foo);\n";
 
   t.equal(cli.executeOnText(code).errorCount, 0);
   t.end();

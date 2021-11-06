@@ -1,25 +1,20 @@
-const eslint = require("eslint");
-const config = require("./index");
+const { ESLint } = require("eslint");
 const test = require("tape");
+const config = require(".");
 
 const isObject = (obj) => typeof obj === "object" && obj !== null;
 
 test("Test basic properties", (t) => {
-  t.ok(isObject(config.parserOptions));
-  t.ok(isObject(config.rules));
+  const { parserOptions, rules } = config;
+  t.ok(isObject(parserOptions));
+  t.ok(isObject(rules));
   t.end();
 });
 
 test("Load config to validate all rule syntax is correct", (t) => {
-  const CLIEngine = eslint.CLIEngine;
-
-  const cli = new CLIEngine({
-    configFile: ".eslintrc.json",
-    useEslintrc: false,
+  const linterInstance = new ESLint();
+  linterInstance.lintText("var foo = 1;\nvar bar = () => {};\nbar(foo);\n").then(([{ errorCount }]) => {
+    t.equal(errorCount, 0);
+    t.end();
   });
-
-  const code = "var foo = 1;\nvar bar = () => {};\nbar(foo);\n";
-
-  t.equal(cli.executeOnText(code).errorCount, 0);
-  t.end();
 });

@@ -13,8 +13,10 @@ test("Test basic properties", (t) => {
 
 test("Load config to validate all rule syntax is correct", (t) => {
   const linterInstance = new ESLint();
-  linterInstance.lintText("var foo = 1;\nvar bar = () => {};\nbar(foo);\n").then(([{ errorCount }]) => {
-    t.equal(errorCount, 0);
-    t.end();
-  });
+  linterInstance
+    .lintText("var foo = 1;\nvar bar = () => {};\nbar(foo);\n")
+    .then(([{ errorCount }]) => {
+      t.equal(errorCount, 0);
+      t.end();
+    });
 });

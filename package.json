@@ -2,7 +2,7 @@
   "name": "@alxshelepenok/eslint-config",
   "description": "My shareable eslint config",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
   "license": "MIT",
   "scripts": {

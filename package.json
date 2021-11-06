@@ -10,7 +10,7 @@
     "format": "npm run format:js",
     "lint:js": "eslint --cache --ext .js src",
     "format:js": "eslint --cache --ext .js src --fix",
-    "lint:commit": "commitlint -e",
+    "lint:commit": "commitlint --edit",
     "semantic-release": "semantic-release",
     "test": "tape ./src/*.test.js",
     "lint-staged": "lint-staged",
@@ -23,10 +23,7 @@
     "type": "git",
     "url": "git+https://github.com/alxshelepenok/eslint-config.git"
   },
-  "keywords": [
-    "eslint",
-    "eslint-config"
-  ],
+  "keywords": ["eslint", "config"],
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"

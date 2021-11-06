@@ -6,20 +6,18 @@
   "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint --cache --ext .js src",
-    "format": "eslint --cache --ext .js src --fix",
+    "lint": "npm run lint:js",
+    "format": "npm run format:js",
+    "lint:js": "eslint --cache --ext .js src",
+    "format:js": "eslint --cache --ext .js src --fix",
+    "lint:commit": "commitlint -e",
     "semantic-release": "semantic-release",
-    "test": "tape ./src/*.test.js"
+    "test": "tape ./src/*.test.js",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install"
   },
   "engines": {
     "node": ">= 12 || ^10.12"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "npm run test"
-    }
   },
   "repository": {
     "type": "git",
@@ -29,6 +27,16 @@
     "eslint",
     "eslint-config"
   ],
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run format:js"
+    ]
+  },
   "devDependencies": {
     "@commitlint/cli": "13.1.0",
     "@commitlint/config-conventional": "13.1.0",
@@ -37,8 +45,6 @@
     "eslint": "8.2.0",
     "tape": "5.3.1",
     "lint-staged": "11.1.4",
-    "prettier": "2.4.1",
-    "prettier-plugin-packagejson": "2.2.12",
     "semantic-release": "18.0.0",
     "husky": "7.0.4"
   },

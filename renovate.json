@@ -1,5 +1,14 @@
 {
+  "semanticCommits": "enabled",
+  "bumpVersion": "patch",
   "extends": [
-    "config:base"
+    "config:js-lib",
+    ":automergePatch",
+    ":automergeBranch",
+    ":automergePatch",
+    ":automergeBranch",
+    ":automergeLinters",
+    ":automergeTesters",
+    ":automergeTypes"
   ]
 }

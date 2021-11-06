@@ -1,7 +1,7 @@
 {
   "name": "@alxshelepenok/eslint-config",
   "description": "My shareable eslint config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "src/index.js",
   "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
   "license": "MIT",
@@ -40,8 +40,8 @@
   "devDependencies": {
     "@commitlint/cli": "14.1.0",
     "@commitlint/config-conventional": "14.1.0",
-    "@semantic-release/exec": "5.0.0",
-    "@semantic-release/git": "9.0.1",
+    "@semantic-release/exec": "6.0.2",
+    "@semantic-release/git": "10.0.1",
     "eslint": "8.2.0",
     "tape": "5.3.1",
     "lint-staged": "11.2.6",

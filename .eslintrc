@@ -20,6 +20,12 @@
     "ecmaVersion": 6,
     "sourceType": "module"
   },
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "parser": "@typescript-eslint/parser"
+    }
+  ],
   "rules": {
     "accessor-pairs": [
       "error",

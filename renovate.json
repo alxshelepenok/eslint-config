@@ -1,6 +1,10 @@
 {
+  "labels": ["renovate"],
   "semanticCommits": "enabled",
   "bumpVersion": "patch",
+  "rangeStrategy": "bump",
+  "prConcurrentLimit": 16,
+  "prHourlyLimit": 4,
   "extends": [
     "config:js-lib",
     ":automergePatch",

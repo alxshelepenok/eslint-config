@@ -1,0 +1,9 @@
+*.*
+!*.json
+!*.md
+!*.mdx
+!*.ts
+!*.tsx
+!*.yml
+!*.js
+/target/

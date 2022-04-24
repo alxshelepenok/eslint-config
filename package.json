@@ -1,40 +1,39 @@
 {
   "name": "@alxshelepenok/eslint-config",
-  "description": "My shareable eslint config",
   "version": "1.0.29",
-  "main": "src/index.js",
-  "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "lint": "npm run lint:js",
-    "format": "npm run format:js",
-    "lint:js": "eslint --cache --ext .js src",
-    "format:js": "eslint --cache --ext .js src --fix",
-    "lint:commit": "commitlint --edit",
-    "semantic-release": "semantic-release",
-    "test": "tape ./src/*.test.js",
-    "lint-staged": "lint-staged",
-    "prepare": "husky install"
-  },
-  "engines": {
-    "node": ">= 12 || ^10.12"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alxshelepenok/eslint-config.git"
-  },
+  "description": "My shareable eslint config",
   "keywords": [
     "eslint",
     "config"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxshelepenok/eslint-config.git"
+  },
+  "license": "MIT",
+  "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
+  "main": "target/index.js",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf target",
+    "format": "npm run format:ts",
+    "format:ts": "eslint --cache --ext .ts src --fix && prettier --write .",
+    "lint": "npm run lint:ts",
+    "lint:commit": "commitlint --edit",
+    "lint:staged": "lint-staged",
+    "lint:ts": "eslint \"src\" --ext .tsx,.ts && prettier --check .",
+    "prepare": "husky install",
+    "semantic-release": "semantic-release",
+    "test": "ts-node node_modules/tape/bin/tape ./src/*.test.ts"
+  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
     ]
   },
   "lint-staged": {
-    "*.js": [
-      "npm run format:js"
+    "*.ts": [
+      "npm run format:ts"
     ]
   },
   "devDependencies": {
@@ -42,11 +41,20 @@
     "@commitlint/config-conventional": "16.2.1",
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
+    "@types/eslint": "^8.4.1",
+    "@types/node": "^17.0.25",
+    "@types/tape": "^4.13.2",
+    "@typescript-eslint/parser": "^5.20.0",
     "eslint": "8.14.0",
-    "tape": "5.5.3",
+    "husky": "7.0.4",
     "lint-staged": "12.3.8",
+    "prettier": "^2.6.2",
+    "prettier-plugin-packagejson": "^2.2.17",
+    "rimraf": "3.0.2",
     "semantic-release": "19.0.2",
-    "husky": "7.0.4"
+    "tape": "5.3.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
   },
   "peerDependencies": {
     "eslint": "^7.7.0 || ^8.2.0"

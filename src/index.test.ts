@@ -1,8 +1,8 @@
-const { ESLint } = require("eslint");
-const test = require("tape");
-const config = require(".");
+import { ESLint } from "eslint";
+import test from "tape";
+import config from ".";
 
-const isObject = (obj) => typeof obj === "object" && obj !== null;
+const isObject = (obj: unknown) => typeof obj === "object" && obj !== null;
 
 test("Test basic properties", (t) => {
   const { parserOptions, rules } = config;

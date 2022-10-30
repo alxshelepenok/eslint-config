@@ -3,8 +3,6 @@
     "config:js-lib",
     ":automergePatch",
     ":automergeBranch",
-    ":automergePatch",
-    ":automergeBranch",
     ":automergeLinters",
     ":automergeTesters",
     ":automergeTypes"

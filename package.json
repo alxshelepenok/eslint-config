@@ -45,7 +45,7 @@
     "@types/node": "18.11.9",
     "@types/tape": "4.13.2",
     "@typescript-eslint/parser": "5.43.0",
-    "eslint": "8.27.0",
+    "eslint": "8.28.0",
     "husky": "8.0.2",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",

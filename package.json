@@ -42,7 +42,7 @@
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@types/eslint": "8.21.1",
-    "@types/node": "18.14.1",
+    "@types/node": "18.14.2",
     "@types/tape": "4.13.2",
     "@typescript-eslint/parser": "5.53.0",
     "eslint": "8.35.0",

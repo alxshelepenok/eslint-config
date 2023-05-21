@@ -43,7 +43,7 @@
     "@semantic-release/git": "10.0.1",
     "@types/eslint": "8.37.0",
     "@types/node": "18.16.13",
-    "@types/tape": "4.13.4",
+    "@types/tape": "5.6.0",
     "@typescript-eslint/parser": "5.59.6",
     "eslint": "8.41.0",
     "husky": "8.0.3",

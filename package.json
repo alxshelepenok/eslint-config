@@ -19,7 +19,7 @@
     "format": "npm run format:ts",
     "format:ts": "eslint --cache --ext .ts src --fix && prettier --write .",
     "lint": "npm run lint:ts",
-    "lint:commit": "commitlint --edit",
+    "lint:commit": "commitlint",
     "lint:staged": "lint-staged",
     "lint:ts": "eslint \"src\" --ext .ts && prettier --check .",
     "prepare": "husky install",

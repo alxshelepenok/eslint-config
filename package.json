@@ -44,7 +44,7 @@
     "@types/eslint": "8.44.3",
     "@types/node": "18.18.3",
     "@types/tape": "5.6.1",
-    "@typescript-eslint/parser": "6.7.3",
+    "@typescript-eslint/parser": "6.7.4",
     "eslint": "8.50.0",
     "husky": "8.0.3",
     "lint-staged": "13.2.3",

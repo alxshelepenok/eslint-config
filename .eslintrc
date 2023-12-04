@@ -277,7 +277,7 @@
     "no-catch-shadow": ["error"],
     "no-class-assign": ["error"],
     "no-cond-assign": ["error"],
-    "no-console": ["error"],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
     "no-const-assign": ["error"],
     "no-constant-condition": ["error"],
     "no-constructor-return": ["error"],

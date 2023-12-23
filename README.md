@@ -1,6 +1,6 @@
 # eslint-config
 
-Shared eslint config for my projects.
+Shared eslint configuration for consistent code style across projects.
 
 ## Install
 

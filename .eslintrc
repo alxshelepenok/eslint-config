@@ -263,7 +263,7 @@
     "multiline-comment-style": ["error", "starred-block"],
     "multiline-ternary": ["off", "always-multiline"],
     "new-parens": ["error"],
-    "new-cap": ["error", { "capIsNewExceptions": ["Symbol", "BigInt"] }],
+    "new-cap": ["error", { "capIsNewExceptions": ["Symbol", "BigInt", "Intl"] }],
     "newline-after-var": ["off"],
     "newline-before-return": ["off"],
     "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 6 }],

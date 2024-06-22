@@ -373,7 +373,7 @@
     "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
     "no-global-assign": ["error", { "exceptions": [] }],
     "no-native-reassign": ["error"],
-    "no-negated-condition": ["error"],
+    "no-negated-condition": ["off"],
     "no-negated-in-lhs": ["error"],
     "no-nested-ternary": ["off"],
     "no-new": ["error"],

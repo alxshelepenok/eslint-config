@@ -50,7 +50,7 @@
     ],
     "array-callback-return": ["error"],
     "array-element-newline": ["error", "consistent"],
-    "arrow-body-style": ["error", "as-needed"],
+    "arrow-body-style": ["error", "never"],
     "arrow-parens": ["error", "always"],
     "arrow-spacing": ["error", { "before": true, "after": true }],
     "block-scoped-var": ["off"],

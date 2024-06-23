@@ -60,10 +60,8 @@
     "camelcase": [
       "error",
       {
-        "properties": "always",
-        "ignoreDestructuring": false,
-        "ignoreImports": false,
-        "allow": []
+        "properties": "never",
+        "ignoreDestructuring": true
       }
     ],
     "capitalized-comments": ["off"],

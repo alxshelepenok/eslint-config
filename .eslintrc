@@ -448,8 +448,6 @@
     ],
     "no-restricted-syntax": [
       "error",
-      "BreakStatement",
-      "ContinueStatement",
       "DebuggerStatement",
       "ForInStatement",
       "LabeledStatement",

@@ -1,6 +1,6 @@
 {
   "name": "@alxshelepenok/eslint-config",
-  "version": "1.0.570",
+  "version": "1.0.571",
   "description": "Reusable eslint configuration for consistent code style across projects",
   "keywords": [
     "eslint",

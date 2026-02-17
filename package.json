@@ -43,7 +43,7 @@
     "@semantic-release/git": "10.0.1",
     "@types/eslint": "9.6.1",
     "@types/node": "22.19.7",
-    "@types/tape": "5.6.5",
+    "@types/tape": "5.8.1",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
     "eslint": "8.57.1",
@@ -53,7 +53,7 @@
     "prettier-plugin-packagejson": "2.5.22",
     "rimraf": "5.0.10",
     "semantic-release": "23.1.1",
-    "tape": "5.6.6",
+    "tape": "5.9.0",
     "ts-node": "10.9.2",
     "typescript": "5.4.5"
   },

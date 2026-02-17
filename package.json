@@ -48,7 +48,7 @@
     "@typescript-eslint/parser": "7.18.0",
     "eslint": "8.57.1",
     "husky": "8.0.3",
-    "lint-staged": "13.2.3",
+    "lint-staged": "13.3.0",
     "prettier": "3.8.0",
     "prettier-plugin-packagejson": "2.5.22",
     "rimraf": "5.0.10",

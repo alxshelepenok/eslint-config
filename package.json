@@ -47,7 +47,7 @@
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
     "eslint": "8.57.1",
-    "husky": "8.0.3",
+    "husky": "9.1.7",
     "lint-staged": "13.2.3",
     "prettier": "3.8.0",
     "prettier-plugin-packagejson": "2.5.22",
